@@ -161,7 +161,7 @@ class FilterCardList extends React.Component<{form, loading:boolean, list, getLi
                         </StandardFormRow>
                     </Form>
                 </Card>
-                <List
+                {/* <List
                     rowKey="id"
                     // style={{ marginTop: 24 }}
                     grid={{ gutter: 24, xl: 4, lg: 3, md: 3, sm: 2, xs: 1 }}
@@ -197,7 +197,7 @@ class FilterCardList extends React.Component<{form, loading:boolean, list, getLi
                             </Card>
                         </List.Item>
                     )}
-                />
+                /> */}
             </div>
         );
     }

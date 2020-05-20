@@ -201,7 +201,7 @@ class SearchList extends React.Component<{form, list, loading: boolean, getList:
                     bordered={false}
                     bodyStyle={{ padding: '8px 32px 32px 32px' }}
                 >
-                    <List
+                    {/* <List
                         size="large"
                         loading={list.length === 0 ? loading : false}
                         rowKey="id"
@@ -235,7 +235,7 @@ class SearchList extends React.Component<{form, list, loading: boolean, getList:
                                 <ListContent data={item} />
                             </List.Item>
                         )}
-                    />
+                    /> */}
                 </Card>
             </React.Fragment>
         );

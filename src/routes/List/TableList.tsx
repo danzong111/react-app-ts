@@ -424,7 +424,7 @@ class TableList extends React.Component<ITableListProps, {modalVisible: boolean,
                         />
                     </div>
                 </Card>
-                <CreateForm {...parentMethods} modalVisible={modalVisible} />
+                {/* <CreateForm {...parentMethods} modalVisible={modalVisible} /> */}
             </PageHeaderLayout>
         );
     }

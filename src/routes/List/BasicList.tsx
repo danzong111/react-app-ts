@@ -120,7 +120,7 @@ class BasicList extends React.Component<{loading:boolean, list, getList:(params)
                         <Button type="dashed" style={{ width: '100%', marginBottom: 8 }} icon="plus">
                             添加
                         </Button>
-                        <List
+                        {/* <List
                             size="large"
                             rowKey="id"
                             loading={loading}
@@ -136,7 +136,7 @@ class BasicList extends React.Component<{loading:boolean, list, getList:(params)
                                     <ListContent data={item} />
                                 </List.Item>
                             )}
-                        />
+                        /> */}
                     </Card>
                 </div>
             </PageHeaderLayout>

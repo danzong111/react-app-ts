@@ -47,42 +47,42 @@ class CoverCardList extends React.Component<{form, list, loading: boolean, getLi
         const { list=[], loading, form } = this.props;
         const { getFieldDecorator } = form;
 
-        const cardList = list ? (
-            <List
-                rowKey="id"
-                loading={loading}
-                grid={{ gutter: 24, xl: 4, lg: 3, md: 3, sm: 2, xs: 1 }}
-                dataSource={list}
-                renderItem={item => (
-                    <List.Item>
-                        <Card
-                            className={'card'}
-                            hoverable={true}
-                            cover={<img alt={item.title} src={item.cover} height={154} />}
-                        >
-                            <Card.Meta
-                                title={<a href="#">{item.title}</a>}
-                                description={<Ellipsis lines={2}>{item.subDescription}</Ellipsis>}
-                            />
-                            <div className={'cardItemContent'}>
-                                <span>{moment(item.updatedAt).fromNow()}</span>
-                                <div className={'avatarList'}>
-                                    <AvatarList size="mini">
-                                        {item.members.map((member, i) => (
-                                            <AvatarList.Item
-                                                key={`${item.id}-avatar-${i}`}
-                                                src={member.avatar}
-                                                tips={member.name}
-                                            />
-                                        ))}
-                                    </AvatarList>
-                                </div>
-                            </div>
-                        </Card>
-                    </List.Item>
-                )}
-            />
-        ) : null;
+        // const cardList = list ? (
+        //     <List
+        //         rowKey="id"
+        //         loading={loading}
+        //         grid={{ gutter: 24, xl: 4, lg: 3, md: 3, sm: 2, xs: 1 }}
+        //         dataSource={list}
+        //         renderItem={item => (
+        //             <List.Item>
+        //                 <Card
+        //                     className={'card'}
+        //                     hoverable={true}
+        //                     cover={<img alt={item.title} src={item.cover} height={154} />}
+        //                 >
+        //                     <Card.Meta
+        //                         title={<a href="#">{item.title}</a>}
+        //                         description={<Ellipsis lines={2}>{item.subDescription}</Ellipsis>}
+        //                     />
+        //                     <div className={'cardItemContent'}>
+        //                         <span>{moment(item.updatedAt).fromNow()}</span>
+        //                         <div className={'avatarList'}>
+        //                             <AvatarList size="mini">
+        //                                 {item.members.map((member, i) => (
+        //                                     <AvatarList.Item
+        //                                         key={`${item.id}-avatar-${i}`}
+        //                                         src={member.avatar}
+        //                                         tips={member.name}
+        //                                     />
+        //                                 ))}
+        //                             </AvatarList>
+        //                         </div>
+        //                     </div>
+        //                 </Card>
+        //             </List.Item>
+        //         )}
+        //     />
+        // ) : null;
 
         const formItemLayout = {
             wrapperCol: {
@@ -148,7 +148,7 @@ class CoverCardList extends React.Component<{form, list, loading: boolean, getLi
                         </StandardFormRow>
                     </Form>
                 </Card>
-                <div className={'cardList'}>{cardList}</div>
+                {/* <div className={'cardList'}>{cardList}</div> */}
             </div>
         );
     }
