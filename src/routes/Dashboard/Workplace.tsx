@@ -246,9 +246,9 @@ class Workplace extends React.Component<IWorkplaceProps> {
                             title="动态"
                             loading={activitiesLoading}
                         >
-                            <List loading={activitiesLoading} size="large" renderItem={[]} dataSource={[]}>
+                            {/* <List loading={activitiesLoading} size="large" renderItem={[]} dataSource={[]}>
                                 <div className={'activitiesList'}>{this.renderActivities()}</div>
-                            </List>
+                            </List> */}
                         </Card>
                     </Col>
                     <Col xl={8} lg={24} md={24} sm={24} xs={24}>
